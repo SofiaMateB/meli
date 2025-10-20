@@ -1,0 +1,15 @@
+export default function Footer() {
+    return (
+        <footer role="contentinfo" className="nav-footer">
+            <div className="nav-footer-user-info nav-bounds">
+                <div className="nav-footer-info-wrapper">
+                    <div className="nav-footer-primaryinfo">
+                        <small className="nav-footer-copyright">Copyright ©&nbsp;1999-2025 MercadoLibre Colombia LTDA.</small><nav className="nav-footer-navigation">
+                            <ul className="nav-footer-navigation__menu">
+                                <li className="nav-footer-navigation__item"><a href="https://careers-meli.mercadolibre.com/?utm_campaign=site-mco&amp;utm_source=mercadolibre&amp;utm_medium=mercadolibre" className="nav-footer-navigation__link">Trabaja con nosotros</a></li><li className="nav-footer-navigation__item"><a href="https://www.mercadolibre.com.co/ayuda/terminos-condiciones-de-uso_1841" 
+        className="nav-footer-navigation__link">Términos y condiciones</a></li>
+        <li className="nav-footer-navigation__item">
+            <a href="https://www.mercadolibre.com.co/l/promociones" className="nav-footer-navigation__link">Promociones</a></li><li className="nav-footer-navigation__item"><a href="https://www.mercadolibre.com.co/privacidad" className="nav-footer-navigation__link">Cómo cuidamos tu privacidad</a></li><li className="nav-footer-navigation__item"><a href="https://www.mercadolibre.com.co/accesibilidad" className="nav-footer-navigation__link">Accesibilidad</a></li><li className="nav-footer-navigation__item"><a href="https://www.mercadolibre.com.co/ayuda" className="nav-footer-navigation__link">Ayuda / PQR</a></li><li className="nav-footer-navigation__item"><a href="https://www.mercadolibre.com.co/ofertas/navidad" className="nav-footer-navigation__link">Navidad</a></li><li className="nav-footer-navigation__item"><a href="https://www.sic.gov.co/" className="nav-footer-navigation__link">www.sic.gov.co</a></li></ul></nav></div><p className="nav-footer-secondaryinfo">Calle 100 #7-33, Torre I, Piso 16, Bogotá D.C., Colombia</p></div></div><div className="nav-footer-tertiary-info nav-bounds">
+            <a className="nav-footer-sic-logo" href="https://www.sic.gov.co/" target="_blank" rel="nofollow noreferrer"><img width="141" height="30" decoding="async" src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/sic.png" alt="SIC - Industria y comercio" srcSet="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/sic@2x.png 2x"/></a><a className="nav-footer-sic-logo" href="https://www.sic.gov.co/pare-y-compare" target="_blank" rel="nofollow noreferrer"><img width="200" height="34" decoding="async" src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/pum.png" alt="Precio por unidad de medida" srcSet="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/pum@2x.png 2x"/></a></div><a className="nav-footer-hp" href="https://hp.mercadolibre.com/?p=ML&amp;s=MCO&amp;d=desktop">Mercado Libre</a></footer>
+    )
+}

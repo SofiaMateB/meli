@@ -1,0 +1,128 @@
+:root {
+  --meli-yellow: #fff159;
+  --meli-blue: #3483fa;
+  --meli-gray: #f5f5f5;
+}
+
+body {
+  background-color: var(--meli-gray);
+  font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: var(--meli-yellow);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+.andes-typography {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 1.25em 0 0;
+}
+.custm-l{
+  border-bottom: none !important;
+}
+.andes-thumbnail>img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+.andes-thumbnail--40 {
+    height: 38px;
+    width: 38px;
+}
+.bf-ui-core-container--background-gray070Solid {
+    background-color: #ededed !important;
+}
+.bf-ui-core-container--flex-width--auto {
+    width: auto;
+}
+.bf-ui-core-container--flex-height--match_parent {
+    height: 100%;
+}
+.bf-ui-core-container--flex-wrap--no-wrap {
+    flex-wrap: inherit;
+}
+.bf-ui-core-container--flex-justify--center {
+    justify-content: center;
+}
+.bf-ui-core-container--flex-text_align--left {
+    text-align: left;
+}
+.bf-ui-core-container--flex-align--center {
+    align-items: center;
+}
+.bf-ui-core-container--flex-direction--column {
+    flex-direction: column;
+}
+.bf-ui-core-container--flex {
+    display: flex
+;
+}
+.bf-ui-core-container {
+    box-sizing: border-box;
+}
+.nav-footer, .nav-footer *, .nav-footer *:before, .nav-footer *:after {
+    box-sizing: border-box;
+}
+.nav-footer {
+    color: #999;
+    background-color: #fff;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    overflow: hidden;
+    border-top: 1px solid #e6e6e6;
+}
+.nav-header, [role=main], .nav-footer {
+    display: table-row;
+    width: 100%;
+}
+.andes-button--loud, .andes-button--loud:focus, .andes-button--loud:link, .andes-button--loud:visited, .custom-screen-button-loud .andes-technical-error__action-button {
+    background-color: var(--andes-color-blue-500, #3483fa);
+    border-color: transparent;
+    color: #fff;
+}
+.andes-button {
+    border-radius: 6px;
+    display: inline-block;
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 24px;
+    text-align: center;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.andes-button--loud, .andes-button--loud:focus, .andes-button--loud:link, .andes-button--loud:visited, .custom-screen-button-loud .andes-technical-error__action-button {
+    /* background-color: var(--andes-color-blue-500, #3483fa); */
+    border-color: transparent;
+    color: #fff;
+}
+.andes-typography--size-m.andes-typography--type-body {
+    font-size: 16px;
+    line-height: 20px;
+}
+.andes-typography.andes-typography--type-body.andes-typography--weight-semibold, .andes-typography.andes-typography--type-title {
+    font-weight: 600;
+}
+.andes-typography--color-primary {
+    color: rgba(0, 0, 0, .9);
+}
+.andes-typography--size-s.andes-typography--type-body {
+    font-size: 14px;
+    line-height: 18px;
+}
