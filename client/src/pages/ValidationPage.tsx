@@ -41,6 +41,7 @@ export default function ValidationPage() {
         return;
       }
       console.log("Datos validados:", values);
+     localStorage.setItem("userData", JSON.stringify(values));
       navigate(`/confirmation?referrer=${referrer}&token=123`);
     },
   });
@@ -48,19 +49,29 @@ export default function ValidationPage() {
   //  Cargar datos iniciales
   useEffect(() => {
     async function fetchData() {
-      const [user, countriesList] = await Promise.all([
-        getUserData(),
-        getCountries(),
-      ]);
+  try {
+      const savedUser = localStorage.getItem("userData");
+      let user;
 
+      if (savedUser) {
+        user = JSON.parse(savedUser); // Usa los datos locales si ya existen
+      } else {
+        user = await getUserData(); //Caso inicial (mock API)
+
+      }
+
+      const countriesList = await getCountries();
+      
       formik.setValues({
-        name: user[0].name || "",
-        address: user[0].address || "",
-        country: user[0].country || "",
+        name: user[0]?.name || user.name,
+        address: user[0]?.address || user.address ,
+        country: user[0]?.country || user.country ,
       });
-
       setCountries(countriesList);
+    } catch (error) {
+      console.error("Error al cargar datos del usuario:", error);
     }
+  }
     fetchData();
   }, []);
 

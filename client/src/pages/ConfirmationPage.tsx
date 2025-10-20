@@ -16,9 +16,22 @@ export default function ConfirmationPage() {
   };
    useEffect(() => {
     async function fetchUser() {
-      const data = await getUserData();
-      setUser(data[0]);
+      try {
+      const savedUser = localStorage.getItem("userData");
+      let user;
+
+      if (savedUser) {
+        user = JSON.parse(savedUser); // Usa los datos locales si ya existen
+      } else {
+        user = await getUserData();
+        user[0]; // Caso inicial (mock API)
+      }
+
+      setUser(user); // Guarda el usuario en el estado
+    } catch (error) {
+      console.error("Error al cargar datos del usuario:", error);
     }
+  }
     fetchUser();
   }, []);
 
@@ -97,6 +110,10 @@ export default function ConfirmationPage() {
                      <ul className="list-group">
             
                           <li className="list-group-item">  <h5 className="andes-typography--type-body andes-typography--size-m" >Forma de entrega</h5></li>             
+                            <li className="custm-l list-group-item d-flex justify-content-between align-items-center andes-typography--type-body andes-typography--size-m" >
+                            Nombre
+                              <span className="andes-typography--size-m">{user?.name || ''}</span>
+                            </li>
                             <li className="custm-l list-group-item d-flex justify-content-between align-items-center andes-typography--type-body andes-typography--size-m" >
                             Direccion
                               <span className="andes-typography--size-m">{user?.address || ''}</span>
