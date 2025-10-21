@@ -20,9 +20,11 @@ El sistema está dividido en dos capas:
 git clone https://github.com/sofiadevel/abuse-prevention.git
 ## Instalar dependencias del servidor
 cd server
+
 npm install
 ## Instalar dependencias del cliente
 cd ../client
+
 npm install
 
 ## Ejecución del proyecto
@@ -31,15 +33,13 @@ Ejecuta el servidor Express en modo desarrollo:
 
 npm run dev
 
-El servidor se ejecutará en:
-http://localhost:3000
+El servidor se ejecutará en: http://localhost:3000
 
 ## Frontend
 En otra terminal:
 
 npm run dev
-La aplicación se servirá en:
- http://localhost:5173
+La aplicación se servirá en:http://localhost:5173
 
 El cliente consume el backend a través de las rutas:
 
@@ -138,4 +138,5 @@ npm test	Ejecuta las pruebas unitarias con Jest
 Endpoint	Descripción	Fuente
 /meli-users	Devuelve datos de usuario simulados	server/data/users.json
 /meli-countries	Devuelve la lista de países	server/data/countries.json
+
 
